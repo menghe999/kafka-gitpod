@@ -1,5 +1,6 @@
 tasks:
   - init: |
       docker-compose pull
+      sudo apt install telnet
   - command: |
-      docker-compose up
+      docker-compose up -d
